@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Expense</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌟 Trip Expense Tracker 🌟</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-expense.html">Add Expense</a></li>
+        <li><a href="summary.html">Summary</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Add New Expense</h2>
+    <form id="expenseForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Accommodation">Accommodation</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="amount">Amount ($):</label>
+      <input type="number" id="amount" name="amount" step="0.01" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Add Expense</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Trip Expense Tracker</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
